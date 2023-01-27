@@ -4,8 +4,9 @@ function App() {
   return (
     <div>
       <h1>My Todos</h1>
-      <Todo />
-      <Todo />
+      <Todo text="aaaaaaaaaaaaaaa" />
+      <Todo text="bbbbbbbbbbbbb" />
+      <Todo text="cccccccc" />
     </div>
   );
 }
