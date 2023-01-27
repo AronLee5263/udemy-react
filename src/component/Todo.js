@@ -21,7 +21,9 @@ function Todo(props) {
           Delete
         </button>
       </div>
-      {modalIsOpen ? <Modal /> : null}
+      {modalIsOpen ? (
+        <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />
+      ) : null}
       {modalIsOpen && <Backdrop onCancel={closeModalHandler} />}
       {/* /* 위와 똑같음. 양쪽 모두 참이면 두번쨰 값을 반환*/}
     </div>
